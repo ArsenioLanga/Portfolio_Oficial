@@ -1,5 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
+import "./Profile.css";
 
 export default function Profile(){
     return(
@@ -7,13 +8,14 @@ export default function Profile(){
            <div className="profile-parent">
                <div className="profile-details">
                    <div className="cols">
-                       <a href="https://github.com/ArsenioLanga"><i className="fa fa-github"></i></a>
+                       <div className="cols-icon">
+                           <a href="https://github.com/ArsenioLanga"><i className="fa fa-github"></i></a>
                        <a href="https://twitter.com/arseniosergiola"><i className="fa fa-twitter"></i></a>
                        <a href="https://www.instagram.com/arsenio__langa/"><i className="fa fa-instagram"></i></a>
                        <a href="https://www.linkedin.com/in/arsenio-s%C3%A9rgio-langa-793257147/"><i className="fa fa-linkedin-square"></i></a>
                        <a href="https://web.facebook.com/arseniosergio.langa/"><i className="fa fa-facebook"></i></a>
+                        </div> 
                     </div>
-                
                     <div className="profile-details-name">
                         <span className="primary-text">
                            {" "}
@@ -42,7 +44,7 @@ export default function Profile(){
                                 />
                             </h1>
                             <span className="profile-role-tagline">
-                                Analista programador, com habilidades em tecnologias para front and back end.
+                                Analista e programador, com habilidades em tecnologias para front and back end.
                             </span>
                         </span>
                     </div>
@@ -51,11 +53,15 @@ export default function Profile(){
                            {""}
                            Fale comigo {""}
                        </button>
-                       <a href="curriculum_vitae.pdf" download="curriculum_vitae.pdf">
-                            <button className="btn highlighted-btn">Baixa CV</button>   
+                       <a href="curriculum_vitae.pdf" download="Arsenio curriculum_vitae.pdf">
+                            <button className="btn highlighted-btn">Download CV</button>   
                         </a>
-
                     </div>
+                </div>
+                <div className="profile-picture">
+                    <div className="profile-picture-background">
+                        
+                    </div>              
                 </div>
             </div>
         </div>
