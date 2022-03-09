@@ -1,4 +1,5 @@
 import React from "react";
+import Typical from "react-typical";
 
 export default function Profile(){
     return(
@@ -11,6 +12,49 @@ export default function Profile(){
                        <a href="https://www.instagram.com/arsenio__langa/"><i className="fa fa-instagram"></i></a>
                        <a href="https://www.linkedin.com/in/arsenio-s%C3%A9rgio-langa-793257147/"><i className="fa fa-linkedin-square"></i></a>
                        <a href="https://web.facebook.com/arseniosergio.langa/"><i className="fa fa-facebook"></i></a>
+                    </div>
+                
+                    <div className="profile-details-name">
+                        <span className="primary-text">
+                           {" "}
+                            Olá, sou <span className="highlighted-text">Arsénio</span>
+                       </span>
+                    </div>
+
+                    <div className="profile-details-role">
+                        <span className="primary-text">
+                           {" "}
+                            <h1>
+                                <Typical 
+                                  loop={Infinity}
+                                  steps={[
+                                      "Ethusiastic Dev ",
+                                      1000,
+                                      "Front Dev",
+                                      1000,
+                                      "Back Dev",
+                                      1000,
+                                      "Designer Dev",
+                                      1000,
+                                      "Mobile Dev",
+                                      1000,
+                                  ]}
+                                />
+                            </h1>
+                            <span className="profile-role-tagline">
+                                Analista programador, com habilidades em tecnologias para front and back end.
+                            </span>
+                        </span>
+                    </div>
+                    <div className="profile-options">
+                       <button className="btn primary-btn">
+                           {""}
+                           Fale comigo {""}
+                       </button>
+                       <a href="curriculum_vitae.pdf" download="curriculum_vitae.pdf">
+                            <button className="btn highlighted-btn">Baixa CV</button>   
+                        </a>
+
                     </div>
                 </div>
             </div>
