@@ -1,12 +1,11 @@
-import React from 'react';
-class App extends React.Component{
-  render(){
-    return(
-      <div>
-        <h1>Ola Primeiro Projecto</h1>
-      </div>
-    )
-  }
+import Profile from "./PortfolioContainer/Home/Profile";
+
+function App(){
+  return(
+    <div className='App'>
+       <Profile />
+    </div>
+  )
 }
 
 export default App;
