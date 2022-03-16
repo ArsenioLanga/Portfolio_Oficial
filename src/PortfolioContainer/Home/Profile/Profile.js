@@ -28,7 +28,7 @@ export default function Profile(){
                            {" "}
                             <h1>
                                 <Typical 
-                                  loop={Infinity}
+                                  loop={Infinity} 
                                   steps={[
                                       "Ethusiastic Dev ",
                                       1000,
