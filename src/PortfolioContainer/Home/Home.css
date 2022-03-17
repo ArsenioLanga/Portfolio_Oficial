@@ -2,6 +2,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 370px;
+    min-height: 100vh;
     background-image: url(../../assets/Home/bg.jpg );
 }
