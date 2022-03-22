@@ -5,6 +5,7 @@
     justify-content: center;
     height: 10%;
     min-height: fit-content;
+    box-sizing: border-box;
 }
 
 .profile-parent{
@@ -96,7 +97,8 @@
 
 /* Media querys */
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1110px){ 
+
     .profile-picture{
         margin: 0 0 0 10px;
     }

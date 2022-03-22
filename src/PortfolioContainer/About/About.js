@@ -5,7 +5,7 @@ export default function About(){
     return(
         <div className="about-container">
             <div className="about-header">
-                <p className="about-title">conhecimentos</p>
+                <span className="about-title">conhecimentos</span>
                 <p className="about_subtitle">porque me escolher?</p>
                 <hr className="horinzotal-row" />
             </div>
@@ -15,14 +15,18 @@ export default function About(){
                 <div className="about-photo"></div>
 
                 <div className="about-descriction">
-                    <p>Desenvolvedor web e móvel de pilha completa com conhecimento de fundo de pilhas MERN com redux,
-                     juntamente com um talento especial para criar aplicativos com a máxima eficiência. Profissional
-                      forte com um BSC disposto a ser um trunfo para uma organização.</p>
-                      <span>Aqui estao alguns exemplos</span>
+                    <p>Aprender mais e me tornar um programador <i>FullStack</i> de mão cheia é o meu principal
+                         objectivo, viso obter conhecimentos teóricos e práticos trabalhando em contacto 
+                         directo com realidade para meu desenvolvimento profissional, com foco nos que a 
+                         empresa estabelecer. 
+                     A berto a novos desafios e disposto a ser um trunfo para o progresso de uma organização.</p>
+                      <span>Habilidades:</span>
                       <ul>
-                          <li>Desenvolvimento Web e Mobile Full Stack</li>
-                          <li>Front-end interativo de acordo com o desig</li>
-                          <li>Gerenciando banco de dados</li>
+                          <li>Front End Developer</li>
+                          <li>Back End Developer</li>
+                          <li>Mobile Developer</li>
+                          <li>Database Management System</li>
+                          <li>Versioning</li>
                       </ul>
 
                       <div className="find-me">
@@ -37,6 +41,7 @@ export default function About(){
                           </div>
                       </div>
                 </div>
+                
             </div>
             
         </div>

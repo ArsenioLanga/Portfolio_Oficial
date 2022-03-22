@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 480px;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .resume-header .resume-title{
@@ -14,12 +15,13 @@
     font-weight: bold;
     color: #1F2235;
     margin: 0;
+    margin-top: 15px;
 }
 
 .resume-header .resume_subtitle{
     text-transform: capitalize;
     font-size: 12px;
-    font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins regular','Gill Sans', 'Trebuchet MS', sans-serif;
     color: #333333;
     margin-top: 0;
 }
@@ -30,33 +32,168 @@
     color: #FF5823;; 
     background-color: #FF5823;
     border-radius: 8%;
+    margin-top: 2px;
 }
 
 .resume-content{
+    padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    width: 75%;
-    height: 70%;
-    transition: 1s ease-out;
+    width: 695px;
+    height: 370px;
+    transition: 1.5s ease-out;
+    /* background-color: #1F2235; */
 }
 
+.resume-content .resume-option{
+    height: 370px;
+    width: 210px;
+    box-shadow:1px 0.5px 0.5px .5px;
+}
+
+.resume-content .resume-option .option{
+    height: 200px;
+    width: 20px;
+    margin-top: 60px;
+    margin-left: 50px;
+    position: relative;
+    background-color: #1F2235;
+    box-shadow: 0 0 20px 9px #1F22351f;
+    /* border-radius: 40%; */
+}
+.btn-option{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+/* .active{
+    color: #fff;
+    font-weight: bold;
+} */
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 600%;
+    height: 30px;
+    background: #1F2235;
+    /* background: linear-gradient(to right, #ff105f, #ffad06); */
+    border-radius: 30px;
+    transition: .5s;
+}
 .resume-content .resume-item{
-    width: 40%;
-    height: 100%;
-    background-color: aqua;
-    /* background-image: url('./M.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; */
+    height: 370px;
+    width: 400px;
 }
 
-.resume-content .resume-descriction{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
+.resume-item .resume-item-container{
+    height: 370px;
+    width: 400px;
+    position: absolute;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+
+}
+.resume-item .resume-item-container .educacao{
     height: 100%;
-    width: 60%;
-    background-color: black;
+    top: 0px;
+    background-color: #333333;
+    position: relative;
+}
+.resume-item .resume-item-container .experiencia{
+    height: 100%;
+    background-color: #FF5823;
+    position: relative;
+    top: 0;
+}
+.resume-item .resume-item-container .skins{
+    height: 100%;
+    background-color: #3366dd;
+    position: relative;
+    top: 0;
+}
+.resume-item .resume-item-container .projectos{
+    height: 100%;
+    background-color: #cbcbcb;
+    position: relative;
+    top: 0;
+}
+.resume-item .resume-item-container .interesse{
+    height: 100%;
+    background-color: #d6d6d6;
+    position: relative;
+    top: 0;
+}
+
+@media screen and (max-width: 1110px) {
+    /* .resume-container{
+        height: 480px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .resume-header .resume-title{
+        font-size: 24px;
+    }
+
+    .resume-header .resume_subtitle{
+        font-size: 16px;
+    }
+
+    .resume-header .horinzotal-row{
+        height: 3px;
+    }
+
+    .resume-content{
+        justify-content: left;
+        align-items: center;
+        width: 545px;
+        height: 330px;
+        padding: 0;
+    } */
+/* 
+    .resume-content .resume-photo{
+        height: 500px;
+    }
+    .resume-content .resume-descriction{
+        height: 500px;
+        width: 534px;
+    }
+
+    .resume-descriction p{
+        margin: 12px;
+        font-size: 16px;
+        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .resume-descriction ul{
+        font-size: 16px;
+        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .resume-descriction span{
+        margin-left: 40px;
+        margin-bottom: 0 !important;
+        font-size: 18px;
+        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .resume-descriction ul{
+        margin: 0;
+    }
+    
+    .resume-descriction li{
+        font-size: 18px;
+        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    ::marker{
+        color: #FF5823;
+        font-size: 22px;
+    }
+     */
 }
