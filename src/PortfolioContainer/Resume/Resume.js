@@ -49,6 +49,7 @@ const  skins = () =>{
             educt.style.top = "-680px";
             exper.style.top = "-680px";
             skin.style.top = "-680px";
+            skin.style.transition = "Fade in";
             proj.style.top = "-680px";
             inter.style.top = "-680px";
             z.style.top = "74px"; 
@@ -119,21 +120,39 @@ export default function Resume(){
                     <div className="resume-item-container">
                         <div className="educacao" id="educacao">
                             <div className="content-bio">
-                               <ul>
-                                   <li>
-                                        <span>Nivel Basico:</span> Escola Secundaria de Malhazine <button className="btn-bio">2010-2012</button>
+                                <ul>
+                                    <li>
+                                        <span className="span-title">Universidade Eduardo Mondlane </span> <button className="btn-bio">2018-2021</button><br />
+                                        <span className="span-content"> Licenciatura em Informatica (por defender)</span>
                                     </li>
                                     <li>
-                                        <span>Nivel Medio:</span> Escola Secundaria de Malhazine <button className="btn-bio">2012-2014</button> 
+                                        <span className="span-title">Escola Secundaria de Malhazine</span>  <button className="btn-bio">2012-2014</button> <br />
+                                        <span className="span-content">Nivel Medio</span>  
                                     </li>
                                     <li>
-                                        <span>Nivel Superior:</span> Universidade Eduardo Mondlane <button className="btn-bio">2018-2021</button>
+                                        <span className="span-title">Escola Secundaria de Malhazine</span>     <button className="btn-bio">2010-2012</button> <br />
+                                        <span className="span-content">Nivel basico</span>
                                     </li>
-                               </ul>
+                                </ul>
                             </div>
                         </div>
                         <div className="experiencia" id="experiencia">
-                            EXPERIENCIA
+                            <div className="content-experience">
+                                <ul>
+                                    <li>
+                                        <span className="span-title-experience">desenvolvomento de aplicacoes com fins academicos </span> <button className="btn-experience">2018-Presente</button><br />
+                                        <span className="span-content-experience">Venho desenvolevendo aplicacoes com fins academicos desde 2018 ate hoje, tenda ja desenvolvido dezenas de
+                                         softwares de gestao empresarial, gestao de vendas, gestao academica, entre outros em direfentes linguagens de programacao(Pascal, Java, Java Web, Php, JavaScript, Phyton) e ambientes,
+                                         desde o <i>Front End</i>, <i>Back End</i> e um pouco de <i>Mobile</i>, bem como gerenciamento e administracao das bases de dados relacionais em diferentes 
+                                         SGBD (PostGree, Oracle, MysQl, Sqlyog, entre outros).
+                                         Boa parte das minha aplicacacoes estao no meu perfil do <a className="link-github" href="https://github.com/ArsenioLanga">GitHub</a> la hospedadas e outras em alguns servidores na web.</span>
+                                    </li>
+                                    {/* <li>
+                                        <span className="span-title">De</span>  <button className="btn-bio">2012-2014</button> <br />
+                                        <span className="span-content">Nivel Medio</span>  
+                                    </li> */}
+                                </ul>
+                                </div>
                         </div>
                         <div className="skins" id="skins">
                             SKINS
