@@ -142,7 +142,7 @@ export default function Resume(){
                                         <span className="span-content-experience">Venho desenvolevendo aplicações com fins academicos desde 2018 ate hoje, tenda ja desenvolvido dezenas de
                                          softwares de gestão empresarial, gestão de vendas, gestão académica, entre outros em direfentes linguagens de programação(Pascal, Java, Java Web, Php, JavaScript, Phyton) e ambientes,
                                          desde o <i>Front End</i>, <i>Back End</i> e um pouco de <i>Mobile</i>, bem como gerenciamento e administracao das bases de dados relacionais em diferentes 
-                                         SGBD (PostGree, Oracle, MysQl, Sqlyog, entre outros).
+                                         SGBD (PostGree, Oracle, MysQl, Sqlyog).
                                          Boa parte das minha aplicações  estão no meu perfil do <a className="link-github" href="https://github.com/ArsenioLanga">GitHub</a> la hospedadas e outras em alguns servidores na web.</span>
                                     </li>
                                     {/* <li>
@@ -228,7 +228,6 @@ export default function Resume(){
                                     <li>
                                         <span className="procjct-title">Portfolio Profissional</span> <br />
                                         <span className="procjct-content"><strong>Tecnologias usadas: </strong>React Js, Bootstrap</span>
-                                        <p>Meu Portfolio Profissional com a minha bibliografia, habilidades e projectos.</p>
                                     </li>
                                 </ul>
                             </div>

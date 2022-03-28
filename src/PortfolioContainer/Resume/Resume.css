@@ -43,7 +43,6 @@
     width: 800px;
     height: 340px;
     transition: 1.5s ease-out;
-    /* background-color: #1F2235; */
 }
 
 .resume-content .resume-option{
@@ -60,7 +59,6 @@
     position: relative;
     background-color: #1F2235;
     box-shadow: 0 0 20px 9px #1F22351f;
-    /* border-radius: 40%; */
 }
 .btn-option{
     padding: 10px 30px;
@@ -311,7 +309,6 @@
     font-weight: 700;
     color: #FF5823;
     border-radius: 30px;
-    /* margin-right: 10px; */
 
 }
 .resume-item .resume-item-container .interesse{
@@ -340,8 +337,9 @@
     color: #1F2235;
 }
 
+/* Media queries */
 @media screen and (max-width: 1110px) {
-    /* .resume-container{
+     .resume-container{
         height: 480px;
         justify-content: center;
         align-items: center;
@@ -354,56 +352,441 @@
     .resume-header .resume_subtitle{
         font-size: 16px;
     }
-
+}
     .resume-header .horinzotal-row{
         height: 3px;
     }
 
-    .resume-content{
-        justify-content: left;
-        align-items: center;
-        width: 545px;
-        height: 330px;
-        padding: 0;
-    } */
-/* 
-    .resume-content .resume-photo{
-        height: 500px;
-    }
-    .resume-content .resume-descriction{
-        height: 500px;
-        width: 534px;
+    @media screen and (max-width: 910px){
+        .resume-container{
+            display: flex;
+            height: 500px;
+        }
+
+        .resume-content{
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            width: 800px;
+            height: 340px;
+            transition: 1.5s ease-out;
+           
+        }
+
+        .experiencia .content-experience{
+            padding-top: 15px;
+            width: auto;
+            height: 100%;
+        }
+
+                
+        .content-skins .content-grid .skin-title{
+            font-family: 'Lucida Sans Unicode','Arial Narrow Bold', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #FF5823;
+        }
+
+        .content-skins .content-grid .skin-content{
+            font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 12px;
+            color: #1F2235;
+        }
+
+        .procjct-title{
+            font-family: 'Lucida Sans Unicode',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: #FF5823;
+            margin-top: 0px;
+        }
+
+        .procjct-content{
+            font-family: 'Lucida Sans Unicode',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 10px;;
+            color: #1F2235;
+        }
+
+        .project-content ul li p{
+           margin: auto;
+        }  
     }
 
-    .resume-descriction p{
-        margin: 12px;
-        font-size: 16px;
-        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    @media screen and (max-width: 810px){
+        .resume-content{
+            flex-direction: column;
+            width: 700px;
+        }
+        .resume-content .resume-option{
+            height: 50px;
+            width: 640px;
+            padding: 2px;
+            box-shadow:1px 0.5px 0.5px .5px;
+        }
+        
+        .resume-content .resume-option .option{
+            height: 100%;
+            width: 640px;
+            margin-top: 2px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #1F22351f;
+            background-color: #fff;
+        }
+
+        .btn-option{
+            padding: 10px 30px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            position: relative;
+        }
+      
+        #btn{
+            top: 0;
+            left: 10px;
+            width: 0px;
+            height: 0px;
+
+        }
+
+        .active{
+            color: #FF5823;
+            background-color: #1F2235;
+        }
+        
     }
 
-    .resume-descriction ul{
-        font-size: 16px;
-        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    .resume-descriction span{
-        margin-left: 40px;
-        margin-bottom: 0 !important;
-        font-size: 18px;
-        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
     
-    .resume-descriction ul{
-        margin: 0;
+
+    @media screen and (max-width: 575px){
+        .resume-content{
+            width: 375px;
+        }
+
+        .resume-content .resume-option{
+            height: 50px;
+            width: 370px;
+            padding: 2px;
+            box-shadow:1px 0.5px 0.5px .5px;
+        }
+
+        .resume-content .resume-option .option{
+            height: 100%;
+            width: 370px;
+            box-sizing: border-box;
+        }
+
+        .btn-option{
+            font-size: 14px;
+            padding-left: 0;
+            padding-right: 5px;
+            margin: 0;
+            margin-top: 2px;
+        }
+
+        .resume-item .resume-item-container{
+            padding: 10px;
+        }
+
     }
-    
-    .resume-descriction li{
-        font-size: 18px;
-        font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+    @media screen and (max-width: 375px){
+        .resume-content{
+            width: 375px;
+        }
+
+        .resume-content .resume-option{
+            height: 50px;
+            width: 370px;
+            padding: 2px;
+            box-shadow:1px 0.5px 0.5px .5px;
+        }
+
+        .resume-content .resume-option .option{
+            height: 100%;
+            width: 370px;
+            box-sizing: border-box;
+        }
+
+        .btn-option{
+            font-size: 14px;
+            padding-left: 0;
+            padding-right: 5px;
+            margin: 0;
+            margin-top: 2px;
+        }
+
+        
+            .resume-content .resume-item{
+                width: 370px;
+                
+            }
+
+            .resume-item .resume-item-container{
+                width: 370px;
+            }
+            
+            .educacao .content-bio{
+                padding-top: 2px;
+                align-items: center;
+                justify-content: left;
+                text-align: left;
+            }
+            
+            .content-bio ul{
+                margin: 5px;
+                margin-top: 60px;
+            }
+            .content-bio li{
+                font-family: cursive;
+                margin: 10px;
+                padding-left: 0;
+                justify-content: left;
+            }
+            
+             .educacao .span-title{
+                font-weight: bold;
+                text-transform: capitalize;
+                color: #1F2235;
+                margin-left: 5px;
+                font-size: 12px;
+            }
+            
+            .educacao .span-content{
+                font-weight: normal;
+                text-transform: capitalize;
+                color: #FF5823;
+                text-align: left;
+                margin-left: 10px;
+                font-size: 11.5px;
+            }
+            
+            .educacao .btn-bio{
+                font-family: "Poppins Light";
+                font-weight: 700;
+                background-color: #FF5823;
+                color: #fff;
+                border-radius: 30px;
+            }
+            
+            .educacao ::marker{
+                font-size: 20px;
+            }
+
+            .experiencia .content-experience{
+                padding-top: 5px;
+            }
+
+            .span-title-experience{
+                font-weight: bold;
+                font-size: 10;
+                margin: 1px;
+            }
+
+            .span-content-experience{
+                margin: 1px;
+                font-size: 9px;
+            }
+
+            .btn-experience{
+                font-family: "Poppins Light";
+                font-weight: 700;
+                background-color: #1F2235;
+                color: #FF5823;
+                border-radius: 30px;
+                margin-left: 180px;
+            }
+
+                        
+            .resume-item .resume-item-container .skins{
+                height: 325px;
+            } 
+
+            .content-skins{
+                padding-top: 2px;
+            }
+            .content-skins .content-grid{
+                padding-top: 5px;
+                grid-gap: 5px;
+            }
+
+            
+            .content-skins .content-grid .skin-title{
+                font-size: 13px;
+            }
+
+            .content-skins .content-grid .skin-content{
+                font-size: 10px;
+            }
+
+            .content-skins .content-grid ::marker{
+                font-size: 18px;
+            }
+
+                        
+            .resume-item .resume-item-container .projectos{
+                height: 325px;
+            }
+
+            .procjct-title{
+            font-size: 10px;
+            }
+
+            .project-content ul li p{
+                font-size: 9px;
+            }
+
+                    
+        .resume-item .resume-item-container .interesse{
+            /* height: 325px; */
+            margin-top: 15px;
+            padding-top: 10px;
+        }
+
+        .interesse-content .interesse-title{
+            font-size: 12px;
+        }
+
+        .interesse-content p{
+            font-size: 10px;
+        }    
     }
-    
-    ::marker{
-        color: #FF5823;
-        font-size: 22px;
+
+    @media screen and (max-width: 320px){
+        .resume-content{
+            width: 320px;
+        }
+
+        .resume-content .resume-option{
+            height: 50px;
+            width: 300px;
+            padding: 2px;
+            box-shadow:1px 0.5px 0.5px .5px;
+        }
+
+        .resume-content .resume-option .option{
+            height: 100%;
+            width: 300px;
+            box-sizing: border-box;
+        }
+
+        .btn-option{
+            font-size: 10.5px;
+            font-weight: bold;
+        }
+
+        
+        .resume-content .resume-item{
+            width: 300px;
+                
+        }
+
+        .resume-item .resume-item-container{
+            width: 300px;
+        }
+            
+        .educacao .content-bio{
+            padding-top: .3px;
+        }
+            
+            .content-bio ul{
+                margin: 5px;
+                margin-top: 10px;
+            }
+           
+            
+             .educacao .span-title{
+                font-size: 11px;
+            }
+            
+            .educacao .span-content{
+                font-size: 10px;
+            }
+            
+            .educacao ::marker{
+                font-size: 18px;
+            }
+
+            .experiencia .content-experience{
+                padding-top: 1px;
+            }
+
+            .span-title-experience{
+                font-weight: bold;
+                font-size:11px;
+                margin: 1px;
+            }
+
+            .span-content-experience{
+                margin-top: 1px;
+                font-size: 8px;
+            }
+
+            .btn-experience{
+             font-size: 2px;
+            }
+
+           
+
+
+                        
+            .resume-item .resume-item-container .skins{
+                height: 325px;
+            } 
+
+            .content-skins{
+                padding-top: 2px;
+            }
+            .content-skins .content-grid{
+                padding-top: 5px;
+                grid-gap: 5px;
+            }
+
+            
+            .content-skins .content-grid .skin-title{
+                font-size: 13px;
+            }
+
+            .content-skins .content-grid .skin-content{
+                font-size: 10px;
+            }
+
+            .content-skins .content-grid ::marker{
+                font-size: 18px;
+            }
+
+                        
+            .resume-item .resume-item-container .projectos{
+                height: 325px;
+            }
+
+            .procjct-title{
+            font-size: 10px;
+            }
+
+            .project-content ul li p{
+                font-size: 9px;
+            }
+
+                    
+        .resume-item .resume-item-container .interesse{
+            /* height: 325px; */
+            margin-top: 15px;
+            padding-top: 10px;
+        }
+
+        .interesse-content .interesse-title{
+            font-size: 12px;
+        }
+
+        .interesse-content p{
+            font-size: 10px;
+        }    
+
+        
     }
-     */
-}

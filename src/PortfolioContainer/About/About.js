@@ -15,11 +15,12 @@ export default function About(){
                 <div className="about-photo"></div>
 
                 <div className="about-descriction">
+                    <div>
                     <p>Aprender mais e me tornar um programador <i>FullStack</i> de mão cheia é o meu principal
                          objectivo, viso obter conhecimentos teóricos e práticos trabalhando em contacto 
                          directo com realidade para meu desenvolvimento profissional, com foco nos que a 
                          empresa estabelecer. 
-                     A berto a novos desafios e disposto a ser um trunfo para o progresso de uma organização.</p>
+                     Aberto a novos desafios e disposto a ser um trunfo para o progresso de uma organização.</p>
                       <span>Habilidades:</span>
                       <ul>
                           <li>Front End Developer</li>
@@ -28,6 +29,7 @@ export default function About(){
                           <li>Database Management System</li>
                           <li>Versioning</li>
                       </ul>
+                      </div>
 
                       <div className="find-me">
                           <div className="profile-options">
