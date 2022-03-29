@@ -1,4 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap');
+
+:root{
+    --font-primary: "Baloo Da 2", serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Mulish", serif;
+}
+
 .conctact-container{
     height: 100vh;
-    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1F2235;
+    padding: 30px;
+}
+
+.contacto-header{
+    opacity: 1;
+    z-index: 50;
+}
+.contacto-header .contacto-title{
+    text-transform: capitalize;
+    font-size: 32px;
+    font-family: 'Poppins','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contacto-header .contacto_subtitle{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-family: 'Poppins regular','Gill Sans', 'Trebuchet MS', sans-serif;
+    color: #fff;
+    margin-top: 0;
+}
+
+.contacto-header .horinzotal-row{
+    border: none;
+    height: 4px;
+    color: #FF5823;; 
+    background-color: #FF5823;
+    border-radius: 8%;
+    margin-top: 2px;
+    width: 30%;
+}
+
+.contacto-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem #1F2235;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.contacto-left{
+    width: 42%;
+    background: 
+        linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22,0.9)),
+        url(./contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto-right{
+    width: 58%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*o flex por defaul alinha em linnha mudar para coluna*/
+    align-items: center;
+    justify-content: center; 
+    color: #1F2235;
+}
+
+.input-group{
+    position: relative;
+}
+
+ h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    color: #1F2235;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-action);
+    border-bottom: 1px dashed#1F2235;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 5rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all .3s;
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+}
+
+.field:focus{
+   border-bottom: 1px solid;
+}
+
+.highlighted-btn:hover{
+    background-color: cornsilk;
+    color: #111;
 }

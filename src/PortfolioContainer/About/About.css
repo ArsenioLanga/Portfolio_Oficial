@@ -30,7 +30,7 @@
     text-transform: capitalize;
     font-size: 14px;
     font-family: 'Poppins regular','Gill Sans', 'Trebuchet MS', sans-serif;
-    color: #dcdcdc;
+    color: #fff;
     margin-top: 0;
 }
 
@@ -151,12 +151,11 @@
     
     .about-container {
         width: 810px;
-        height: 750px;
         justify-content: baseline;
     }
 
     .about-container .about-content{
-        width: 70%;
+        width: 80%;
         margin-top: 10px;
     }  
 
@@ -164,8 +163,6 @@
     .about-content .about-descriction{
         width: 450px;
     }
-
-
 
 }
 
