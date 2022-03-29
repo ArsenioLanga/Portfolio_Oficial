@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 480px;
+    height: 100vh;
     align-items: center;
     text-align: center;
     background-image: url('./image/bg.jpg');
@@ -28,7 +28,7 @@
 
 .about-header .about_subtitle{
     text-transform: capitalize;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Poppins regular','Gill Sans', 'Trebuchet MS', sans-serif;
     color: #dcdcdc;
     margin-top: 0;
@@ -48,8 +48,9 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 545px;
-    height: 330px;
+    width: 745px;
+    min-width: none;
+    height: 480px;
     box-shadow: 1.5px 1.5px 1.5px 1.5px #1F2235;
     transition: 1s ease-out;
     opacity: 1;
@@ -58,8 +59,8 @@
 }
 
 .about-content .about-photo{
-    width: 200px;
-    height: 330px;
+    width: 245px;
+    height: 480px;
     background-image: url('./M.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -71,26 +72,26 @@
     flex-wrap: wrap;
     flex-direction: column;
     text-align: left;
-    height: 330px;
-    width: 345px;
+    height: 480px;
+    width: 500px;
     box-sizing: border-box;
     background-color: #1F2235;
 }
 
 .about-descriction p{
-    margin: 10px;
-    font-size: 10px;
+    margin: 20px;
+    font-size: 13px;
     font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .about-descriction ul{
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .about-descriction span{
     margin-left: 20px;
     margin-bottom: 0 !important;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -99,13 +100,13 @@
 }
 
 .about-descriction li{
-    font-size: 11px;
+    font-size: 14px;
     font-family: 'Poppins regular','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ::marker{
     color: #FF5823;
-    font-size: 18px;
+    font-size: 27px;
 }
 
 .about-descriction .find-me{
@@ -114,104 +115,337 @@
 
 @media screen and (max-width: 1110px) {
     .about-container{
-        height: 480px;
+        height: 100vh;
         justify-content: center;
         align-items: center;
     }
-    .about-header .about-title{
-        font-size: 24px;
-    }
 
-    .about-header .about_subtitle{
-        font-size: 16px;
-    }
-
-    .about-header .horinzotal-row{
-        height: 3px;
-    }
-
-    .about-content{
-        justify-content: left;
+}
+@media screen and (max-width: 1110px) {
+    .about-container{
+        height: 100vh;
+        justify-content: center;
         align-items: center;
-        width: 545px;
-        height: 330px;
-        padding: 0;
-        box-shadow: 2.5px 2.5px 2.5px 2.5px #1F2235;
     }
+
+}
+
+@media screen and (max-width: 910px){
+    
+    .about-container {
+        justify-content: baseline;
+    }
+
+    .about-container .about-content{
+        margin-top: 10px;
+    }  
+
+    
+    .about-content .about-descriction{
+        width: 450px;
+    }
+
+}
+
+@media screen and (max-width: 810px){
+    
+    .about-container {
+        width: 810px;
+        height: 750px;
+        justify-content: baseline;
+    }
+
+    .about-container .about-content{
+        width: 70%;
+        margin-top: 10px;
+    }  
+
+    
+    .about-content .about-descriction{
+        width: 450px;
+    }
+
+
 
 }
 
 @media screen and (max-width: 575px){
     .about-container {
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: start;
+        width: 575px;
     }
 
     .about-container .about-content{
-        display: flex;
-        flex-direction: column;
-        width: 330px;
-        height: 545px;
-        margin-bottom: 30px;
-    }  
-
-    
-    .about-content .about-descriction{
-        width: 330px;
-    }
-
-}
-
-@media screen and (max-width: 375px){
-    .about-container {
-        height: auto;
-        width: auto;
-        justify-content: center;
-        align-items: center;
-        text-align: start;
-    }
-
-    .about-container .about-content{
-        display: flex;
-        flex-direction: column;
-        width: 330px;
-        height: 545px;
+        width: 90%;
         margin-bottom: 30px;
     } 
 
+    .about-container .about-content .about-descriction{
+        width: 100%;
+    }
+
+    .about-content .about-photo{
+        width: 200px;
+    }
+    .about-header .about-title{
+        font-size: 30px;
+        margin-top: 25px;
+    }
     
+    .about-header .about_subtitle{
+        font-size: 16px;
+    }
+    
+    .about-header .horinzotal-row{
+        height: 3px;
+        margin-top: 10px;
+    }
+
+    
+.about-descriction p{
+    margin: 12px;
+    font-size: 10px;
+}
+
+.about-descriction ul{
+    font-size: 13px;
+}
+.about-descriction span{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.about-descriction ul{
+    margin: 0;
+}
+
+.about-descriction li{
+    font-size: 13px;
+}
+
+::marker{
+    font-size: 23px;
+}
+
+.about-descriction .find-me{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+}
+
+@media screen and (max-width: 420px){
+    .about-container {
+        height: auto;
+        width: 420px;
+    }
+
+    .about-container .about-content{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 625px;
+    } 
+
+    .about-container .about-content .about-descriction{
+        width: 100%;
+    }
+
+    .about-content .about-photo{
+        width: 200px;
+        height: 350px;
+    }
+    .about-header .about-title{
+        font-size: 24px;
+        margin-top: 25px;
+    }
+    
+    .about-header .about_subtitle{
+        font-size: 12px;
+    }
+    
+    .about-header .horinzotal-row{
+        height: 2px;
+        margin-top: 10px;
+    }
+
+    
+.about-descriction p{
+    margin: 10px;
+    font-size: 10px;
+}
+
+.about-descriction ul{
+    font-size: 11px;
+}
+.about-descriction span{
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.about-descriction ul{
+    margin: 0;
+}
+
+.about-descriction li{
+    font-size: 11px;
+}
+
+::marker{
+    font-size: 17px;
+}
+
+.about-descriction .find-me{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+}
+@media screen and (max-width: 375px){
+    .about-container {
+        height: auto;
+        width: 375px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-container .about-content{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 625px;
+        margin-bottom: 30px;
+    } 
+
+    .about-container .about-content .about-descriction{
+        width: 100%;
+    }
+
+    .about-content .about-photo{
+        width: 125px;
+        height: 150px;
+    }
+    .about-header .about-title{
+        font-size: 24px;
+        margin-top: 25px;
+    }
+    
+    .about-header .about_subtitle{
+        font-size: 12px;
+    }
+    
+    .about-header .horinzotal-row{
+        height: 2px;
+        margin-top: 10px;
+    }
+
+    
+.about-descriction p{
+    margin: 10px;
+    font-size: 10px;
+}
+
+.about-descriction ul{
+    font-size: 11px;
+}
+.about-descriction span{
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.about-descriction ul{
+    margin: 0;
+}
+
+.about-descriction li{
+    font-size: 11px;
+}
+
+::marker{
+    font-size: 17px;
+}
+
+.about-descriction .find-me{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
 }
 
 @media screen and (max-width: 320px){
     .about-container {
+        height: auto;
         width: 320px;
-        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
-    .about-container .about-descriction{
-        width: 310px;
+    .about-container .about-content{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 525px;
+        margin-bottom: 30px;
+    } 
+
+    .about-container .about-content .about-descriction{
+        width: 100%;
     }
-    .about-container  .about-content{
-        width: 300px;
+
+    .about-content .about-photo{
+        width: 125px;
+        height: 150px;
     }
-    .about-descriction p{
-        margin: 22px;
-        font-size: 10px;  
+    .about-header .about-title{
+        font-size: 24px;
+        margin-top: 25px;
     }
     
-    .about-descriction ul{
-        font-size: 11px;
-    }
-    .about-descriction span{
-        margin-left: 20px;
+    .about-header .about_subtitle{
         font-size: 12px;
     }
-
-    .find-me{
-        right: -6700px;
+    
+    .about-header .horinzotal-row{
+        height: 2px;
+        margin-top: 10px;
     }
+
+    
+.about-descriction p{
+    margin: 10px;
+    font-size: 10px;
+}
+
+.about-descriction ul{
+    font-size: 11px;
+}
+.about-descriction span{
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.about-descriction ul{
+    margin: 0;
+}
+
+.about-descriction li{
+    font-size: 11px;
+}
+
+::marker{
+    font-size: 17px;
+}
+
+.about-descriction .find-me{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 }
