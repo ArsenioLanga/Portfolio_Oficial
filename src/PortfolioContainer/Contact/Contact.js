@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import Email from "./Email.php";
 
 export default function Resume(){
     return(
@@ -17,7 +16,7 @@ export default function Resume(){
 
                 <div class="contacto-right">
                         <h1>Contacto</h1>
-                    <form action={<Email />} method="POST">
+                    <form action="" method="POST">
                         <div class="input-group">
                             <input type="text" class="field" name="nome" id="nome" required/>
                             <label for="nome" class="field-label">Nome</label>
@@ -34,6 +33,10 @@ export default function Resume(){
                         <button type="submit" class="btn submit">Enviar</button>
                     </form>
                 </div>
+            </div>
+            <div className="top">
+                <a id="link-topo" href="#home">
+                <i class="fas fa-arrow-up"></i></a>
             </div>
         </div>
     )
