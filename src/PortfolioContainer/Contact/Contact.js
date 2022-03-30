@@ -30,7 +30,8 @@ export default function Resume(){
                             <textarea class="field" id="mesagem" name="msg" required></textarea>
                             <label for="mesagem" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit" class="btn highlighted-btn">Enviar</button>
+                        {/* <button type="submit" class="btn highlighted-btn">Enviar</button> */}
+                        <button type="submit" class="btn submit">Enviar</button>
                     </form>
                 </div>
             </div>
