@@ -25,12 +25,12 @@
     display: flex;
     flex-direction: column;
     margin: 4px 0 2px 0;
-    /* margin: 14px 0 24px 0; */
 }
 
 .profile-details-role .primary-text h1{
     font-size: 40px;
-    font-family: cursive;
+    font-family:  'Courier New', Courier, monospace;
+    /* font-family: cursive; */
     color: #fff;
 }
 
