@@ -2,12 +2,43 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 
+    var MenuItem = document.getElementById('MenuItem');
+    MenuItem.style.maxHeight = "0px";
+    
+    const  menuToggle = () =>{
+        if( MenuItem.style.maxHeight == "0px"){
+            MenuItem.style.maxHeight = "200px";
+          }else{
+            MenuItem.style.maxHeight = "0px";
+          }
+    }
+
 export default function Profile(){
     return(
-        <div className="profile-container">
+    <div className="profile-containers"> 
+        <div className="navbar">
+            <div class="logo">
+                <h1>Arsénio Langa</h1>
+            </div>
+            <nav>
+                <ul id="MenuItem">
+                    <li><a href="home" className="home-selected" >Inicio</a></li>
+                    <li><a href="#conhecimento" >Conhecimentos</a></li>
+                    <li><a href="#about" >Bibliografia</a></li>
+                    <li><a href="#contact" >Contacto</a></li>
+                </ul>
+            </nav>
+            <div className="menu-toggle" onClick={menuToggle}>
+
+            </div>
+            {/* <img src="images/menu.png " class="menu-icon" onclick="menutoggle()"/> */}
+      </div> 
+        <div className="profile-container"> 
+              
            <div className="profile-parent">
-               <div className="profile-details">
-                   <div className="cols">
+               
+                <div className="profile-details">
+                  <div className="cols">
                        <div className="cols-icon">
                            <a href="https://github.com/ArsenioLanga"><i className="fa fa-github"></i></a>
                        <a href="https://twitter.com/arseniosergiola"><i className="fa fa-twitter"></i></a>
@@ -16,13 +47,14 @@ export default function Profile(){
                        <a href="https://web.facebook.com/arseniosergio.langa/"><i className="fa fa-facebook"></i></a>
                         </div> 
                     </div>
+      
                     <div className="profile-details-name">
                         <span className="primary-text">
                            {" "}
                             Olá, sou <span className="highlighted-text">Arsénio</span>
                        </span>
                     </div>
-
+ 
                     <div className="profile-details-role">
                         <span className="primary-text">
                            {" "}
@@ -30,13 +62,13 @@ export default function Profile(){
                                 <Typical 
                                   loop={Infinity} 
                                   steps={[
-                                      "Ethusiastic Dev ",
+                                      "DB Manegerment",
                                       1000,
                                       "Front Dev",
                                       1000,
                                       "Back Dev",
                                       1000,
-                                      "Designer Dev",
+                                      "Web Designer",
                                       1000,
                                       "Mobile Dev",
                                       1000,
@@ -59,11 +91,11 @@ export default function Profile(){
                     </div>
                 </div>
                 <div className="profile-picture">
-                    <div className="profile-picture-background">
-                        
-                    </div>              
+                    <div className="profile-picture-background">   
+                    </div>             
                 </div>
-            </div>
+            </div> 
         </div>
+    </div>
     )
 }

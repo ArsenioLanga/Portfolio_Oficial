@@ -7,7 +7,7 @@ import Footer from "./Footer/Footer";
 
 export default function Home(){
     return(
-        <div className="home-container">
+        <div className="home-container" id="home">
             <Profile />
             <Footer />
         </div>

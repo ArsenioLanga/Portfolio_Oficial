@@ -3,7 +3,7 @@ import "./Contact.css";
 
 export default function Resume(){
     return(
-        <div className="conctact-container">
+        <div className="conctact-container" id="contact">
             <div className="contacto-header">
                 <span className="contacto-title">Conctacto</span>
                 <p className="contacto_subtitle">Fale comigo</p>
@@ -34,10 +34,10 @@ export default function Resume(){
                     </form>
                 </div>
             </div>
-            <div className="top">
+            {/* <div className="top">
                 <a id="link-topo" href="#home">
                 <i class="fas fa-arrow-up"></i></a>
-            </div>
+            </div> */}
         </div>
     )
 }

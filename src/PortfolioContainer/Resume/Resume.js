@@ -95,7 +95,7 @@ const  interest = () =>{
 export default function Resume(){
    
     return(
-        <div className="resume-container">
+        <div className="resume-container" id="conhecimento">
             <div className="resume-header">
                 <span className="resume-title">Currículo académico</span>
                 <p className="resume_subtitle">bibliografia académica</p>
