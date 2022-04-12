@@ -6,7 +6,7 @@ import "./Profile.css";
    
     
     const  menuToggle = () =>{
-        if( MenuItem.style.maxHeight == "0px"){
+        if( MenuItem.style.maxHeight === "0px"){
             MenuItem.style.maxHeight = "200px";
           }else{
             MenuItem.style.maxHeight = "0px";
@@ -29,10 +29,6 @@ export default function Profile(){
                 </ul>
             </nav>
             <div className="menu-toggle" onClick={menuToggle}>
-                { 
-                //   var MenuItem = document.getElementById('MenuItem')
-                   MenuItem.style.maxHeight = "0px"
-                }
 
             </div>
       </div> 

@@ -88,8 +88,9 @@ nav ul li{
 
 .profile-details-role .primary-text h1{
     font-size: 40px;
-    font-family:  'Courier New', Courier, monospace;
-    /* font-family: cursive; */
+    /* font-family:  'Courier New', Courier, monospace; */
+    font-family: cursive;
+    text-align: center;
     color: #fff;
 }
 
@@ -168,6 +169,8 @@ nav ul li{
     .profile-details-role .primary-text{
         font-size: 12px;
         color: #fff;
+        justify-content: center;
+        text-align: center;
     }
 
     .profile-options .btn{
@@ -182,6 +185,8 @@ nav ul li{
         cursor: pointer;
     }
 
+
+
     nav ul{
         position: absolute;
         left: 0;
@@ -189,6 +194,7 @@ nav ul li{
         width: 100%;
         overflow: hidden;
         transition: max-height 0.5s;
+        max-height: 0px;
     }
 
     nav ul li{
@@ -230,11 +236,15 @@ nav ul li{
 
     .profile-options, .profile-details-role{
         text-align: center;
+        justify-content: center;
     }
     .profile-details-role .primary-text h1{
         font-size: 30px;
         font-family: cursive;
+        text-align: center;
         color: #fff;
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
