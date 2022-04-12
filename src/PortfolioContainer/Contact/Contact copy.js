@@ -1,24 +1,11 @@
 import React from "react";
 import "./Contact.css";
-import Email from "./Email.php";
 
-
+const  valid = (item, type) =>{
+    console.warn("item", type)
+}
 
 export default function Resume(){
-
-    const onSubmit = (e) => {
-        e.preventDefault();
-        const data = {
-            nome: e.target.elements.nome.value,
-            email: e.target.elements.email.value,
-            msg: e.target.elements.nome.value
-        }
-
-        
-        console.log(data);
-
-    } 
-
     return(
         <div className="conctact-container" id="contact">
             <div className="contacto-header">
@@ -33,24 +20,21 @@ export default function Resume(){
 
                 <div class="contacto-right">
                         <h1>Contacto</h1>
-                    <form onSubmit={onSubmit}>
+                    <form action="" method="POST">
                         <div class="input-group">
-                            <input type="text" class="field" name="nome" id="nome"
-                            />
+                            <input type="text" class="field" name="name" id="name" onChange={(item)=>valid(item,"name")} />
                             <label for="nome" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" class="field" name="email" id="email"
-                           />
+                            <input type="text" class="field" name="email" id="email" onChange={(item)=>valid(item,"email")}/>
                             <label for="email" class="field-label">Email</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" id="mesagem" name="msg" 
-                             ></textarea>
+                            <textarea class="field" id="mesagem" name="msg" onChange={(item)=>valid(item,"mensagem")} ></textarea>
                             <label for="mesagem" class="field-label">Mensagem</label>
                         </div>
                         {/* <button type="submit" class="btn highlighted-btn">Enviar</button> */}
-                        <button type="submit" class="btn submit" onClick >Enviar</button>
+                        <button type="submit" class="btn submit">Enviar</button>
                     </form>
                 </div>
             </div>

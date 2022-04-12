@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import "./Profile.css";
 
     var MenuItem = document.getElementById('MenuItem');
-    MenuItem.style.maxHeight = "0px";
+   
     
     const  menuToggle = () =>{
         if( MenuItem.style.maxHeight == "0px"){
@@ -29,9 +29,12 @@ export default function Profile(){
                 </ul>
             </nav>
             <div className="menu-toggle" onClick={menuToggle}>
+                { 
+                //   var MenuItem = document.getElementById('MenuItem')
+                   MenuItem.style.maxHeight = "0px"
+                }
 
             </div>
-            {/* <img src="images/menu.png " class="menu-icon" onclick="menutoggle()"/> */}
       </div> 
         <div className="profile-container"> 
               
@@ -63,15 +66,15 @@ export default function Profile(){
                                   loop={Infinity} 
                                   steps={[
                                       "DB Manegerment",
-                                      1000,
+                                      2000,
                                       "Front Dev",
-                                      1000,
+                                      2000,
                                       "Back Dev",
-                                      1000,
+                                      2000,
                                       "Web Designer",
-                                      1000,
+                                      2000,
                                       "Mobile Dev",
-                                      1000,
+                                      2000,
                                   ]}
                                 />
                             </h1>

@@ -209,6 +209,7 @@ nav ul li{
 @media screen and (max-width: 810px){
     .profile-picture{
         margin: 0 !important;
+        width: 260px;
     }   
     .profile-parent{
         flex-direction: column-reverse;
