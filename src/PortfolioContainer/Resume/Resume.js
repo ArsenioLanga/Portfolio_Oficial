@@ -36,7 +36,7 @@ const  experience = () => {
             skin.style.top = "-340px";
             proj.style.top = "-340px";
             inter.style.top = "-340px";
-            z.style.top = "37px"; 
+            z.style.top = "45px"; 
             
             educts.classList.remove('active');
             expers.classList.toggle('active');
@@ -52,7 +52,7 @@ const  skins = () =>{
             skin.style.transition = "Fade in";
             proj.style.top = "-680px";
             inter.style.top = "-680px";
-            z.style.top = "74px"; 
+            z.style.top = "86px"; 
 
             educts.classList.remove('active');
             expers.classList.remove('active');
@@ -68,7 +68,7 @@ const  project = () =>{
             skin.style.top = "-1020px";
             proj.style.top = "-1020px";
             inter.style.top = "-1020px";
-            z.style.top = "109px";  
+            z.style.top = "130px";  
             
             educts.classList.remove('active');
             expers.classList.remove('active');
@@ -83,7 +83,7 @@ const  interest = () =>{
             skin.style.top = "-1360px";
             proj.style.top = "-1360px";
             inter.style.top = "-1360px";
-            z.style.top = "144px";
+            z.style.top = "174px";
             
             educts.classList.remove('active');
             expers.classList.remove('active');

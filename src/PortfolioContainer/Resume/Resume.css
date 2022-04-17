@@ -53,7 +53,7 @@
 }
 
 .resume-content .resume-option .option{
-    height: 200px;
+    height: 230px;
     width: 20px;
     margin-top: 60px;
     margin-left: 50px;
@@ -79,8 +79,8 @@
     top: 0;
     left: 0;
     position: absolute;
-    width: 600%;
-    height: 30px;
+    width: 700%;
+    height: 45px;
     background: #1F2235;
     border-radius: 30px;
     transition: .5s;

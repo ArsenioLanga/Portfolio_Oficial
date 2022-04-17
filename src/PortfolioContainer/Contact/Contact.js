@@ -21,8 +21,8 @@ export default function Resume(){
     const sendEmail = (e) => {
         e.preventDefault();
         
-        emailjs.sendForm('service_z79j4x8', 'service_z79j4x8', e.target, 'SwFWKMbYt-_mdWPxp').then(res=>{
-            console.log(res)
+        emailjs.sendForm('service_z79j4x8', 'template_jdqk1bs', e.target, 'SwFWKMbYt-_mdWPxp').then(res=>{
+            console.log(res) 
         }).catch(err=> console.log(err));
     } 
 
