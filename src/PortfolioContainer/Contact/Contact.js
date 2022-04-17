@@ -1,22 +1,29 @@
 import React from "react";
 import "./Contact.css";
-import Email from "./Email.php";
+import emailjs from "emailjs-com";
 
 
 
 export default function Resume(){
 
-    const onSubmit = (e) => {
-        e.preventDefault();
-        const data = {
-            nome: e.target.elements.nome.value,
-            email: e.target.elements.email.value,
-            msg: e.target.elements.nome.value
-        }
+    // const onSubmit = (e) => {
+    //     e.preventDefault();
+    //     const data = {
+    //         nome: e.target.elements.nome.value,
+    //         email: e.target.elements.email.value,
+    //         msg: e.target.elements.nome.value
+    //     }
 
         
-        console.log(data);
+    //     console.log(data);
 
+    // } 
+    const sendEmail = (e) => {
+        e.preventDefault();
+        
+        emailjs.sendForm('service_z79j4x8', 'service_z79j4x8', e.target, 'SwFWKMbYt-_mdWPxp').then(res=>{
+            console.log(res)
+        }).catch(err=> console.log(err));
     } 
 
     return(
@@ -33,7 +40,7 @@ export default function Resume(){
 
                 <div class="contacto-right">
                         <h1>Contacto</h1>
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={sendEmail}>
                         <div class="input-group">
                             <input type="text" class="field" name="nome" id="nome"
                             />
@@ -50,7 +57,7 @@ export default function Resume(){
                             <label for="mesagem" class="field-label">Mensagem</label>
                         </div>
                         {/* <button type="submit" class="btn highlighted-btn">Enviar</button> */}
-                        <button type="submit" class="btn submit" onClick >Enviar</button>
+                        <button type="submit" class="btn submit">Enviar</button>
                     </form>
                 </div>
             </div>
