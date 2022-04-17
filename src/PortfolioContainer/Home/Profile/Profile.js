@@ -2,10 +2,11 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 
-    var MenuItem = document.getElementById('MenuItem');
+   
    
     
     const  menuToggle = () =>{
+        var MenuItem = document.getElementById('MenuItem');
         if( MenuItem.style.maxHeight === "0px"){
             MenuItem.style.maxHeight = "200px";
           }else{

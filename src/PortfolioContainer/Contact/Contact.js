@@ -42,17 +42,17 @@ export default function Resume(){
                         <h1>Contacto</h1>
                     <form onSubmit={sendEmail}>
                         <div class="input-group">
-                            <input type="text" class="field" name="nome" id="nome"
+                            <input type="text" class="field" name="nome" id="nome" required
                             />
                             <label for="nome" class="field-label">Nome</label>
                         </div>
                         <div class="input-group">
-                            <input type="text" class="field" name="email" id="email"
+                            <input type="email" class="field" name="email" id="email" required
                            />
                             <label for="email" class="field-label">Email</label>
                         </div>
                         <div class="input-group">
-                            <textarea class="field" id="mesagem" name="msg" 
+                            <textarea class="field" id="mesagem" name="msg"  required
                              ></textarea>
                             <label for="mesagem" class="field-label">Mensagem</label>
                         </div>
