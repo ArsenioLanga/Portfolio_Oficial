@@ -224,7 +224,7 @@ nav ul li{
 
     .profile-options{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .profile-details{
         margin: 25px 0 0 0 ;

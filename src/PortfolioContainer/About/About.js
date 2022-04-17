@@ -33,10 +33,11 @@ export default function About(){
 
                       <div className="find-me">
                           <div className="profile-options">
-                           <button className="btn primary-btn">
-                             {""}
-                            Fale comigo {""}
-                           </button>
+                           <a href="#contact">
+                            <button className="btn primary-btn">
+                                Fale comigo
+                            </button>
+                           </a>
                           <a href="curriculum_vitae.pdf" download="Arsenio curriculum_vitae.pdf">
                                 <button className="btn highlighted-btn">Download CV</button>   
                             </a>

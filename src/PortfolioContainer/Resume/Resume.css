@@ -422,18 +422,19 @@
     @media screen and (max-width: 810px){
         .resume-content{
             flex-direction: column;
-            width: 700px;
+            width: 750px;
         }
         .resume-content .resume-option{
+            display: flex;
             height: 50px;
-            width: 640px;
+            width: 750px;
             padding: 2px;
             box-shadow:1px 0.5px 0.5px .5px;
         }
         
         .resume-content .resume-option .option{
             height: 100%;
-            width: 640px;
+            width: 740px;
             margin-top: 2px;
             margin-left: auto;
             margin-right: auto;
@@ -470,19 +471,18 @@
 
     @media screen and (max-width: 575px){
         .resume-content{
-            width: 375px;
+            width: 565px;
         }
 
         .resume-content .resume-option{
             height: 50px;
-            width: 370px;
-            padding: 2px;
+            width: 560px;
             box-shadow:1px 0.5px 0.5px .5px;
         }
 
         .resume-content .resume-option .option{
             height: 100%;
-            width: 370px;
+            width: 558px;
             box-sizing: border-box;
         }
 
@@ -490,32 +490,45 @@
             font-size: 14px;
             padding-left: 0;
             padding-right: 5px;
-            margin: 0;
-            margin-top: 2px;
+            margin: 2px;
         }
 
         .resume-item .resume-item-container{
             padding: 10px;
         }
 
+        .educacao .content-bio{
+            padding-top: 1px;
+        }
+
+        .resume-item .resume-item-container .projectos{
+            padding-top: 15px;
+        }
+
+        .resume-item .resume-item-container .interesse{
+            padding-top: 10px;
+        }
+
     }
 
-
-    @media screen and (max-width: 375px){
+/* 
+    @media screen and (max-width: 420px){
         .resume-content{
-            width: 375px;
+            width: 420px;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
         }
 
         .resume-content .resume-option{
             height: 50px;
-            width: 370px;
-            padding: 2px;
+            width: 418px;
             box-shadow:1px 0.5px 0.5px .5px;
         }
 
         .resume-content .resume-option .option{
             height: 100%;
-            width: 370px;
+            width: 418px;
             box-sizing: border-box;
         }
 
@@ -523,30 +536,110 @@
             font-size: 14px;
             padding-left: 0;
             padding-right: 5px;
+            margin: 2px;
+        }
+
+        .resume-item{
+            /* width: 420px; 
+        }
+        .resume-item .resume-item-container{
+            width: 420px;
+            padding: 5px;
+        }
+
+        .educacao .content-bio{
+            width: 620px;
+            padding-left: 30px;
+            margin-top: 50px;
+        }
+
+        .content-bio ul li{
+            margin: 2px;
+            margin-top: 10px;
+            padding-left: 30px
+        }
+
+        .resume-item .resume-item-container .experiencia{
+
+
+            width: 500px;;
+
+            background: #FF5823;
+            margin-top: 0px;
+            padding-top: 3px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+            .btn-experience{
+                font-family: "Poppins Light";
+                font-weight: 700;
+                background-color: #1F2235;
+                color: #FF5823;
+                border-radius: 30px;
+                margin-left: 43px;
+            }
+        
+        .resume-item .resume-item-container .projectos{
+
+            background: #FF5823;
+            padding-top: 15px;
+        }
+
+        .resume-item .resume-item-container .interesse{
+            padding-top: 10px;
+        }
+    }
+ */
+
+
+ @media screen and (max-width: 375px){
+        .resume-content{
+            width: 375px;
+        }
+
+        .resume-content .resume-option{
+            height: 50px;
+            width: 375px;
+            padding: 2px;
+            box-shadow:1px 0.5px 0.5px .5px;
+        }
+
+        .resume-content .resume-option .option{
+            height: 100%;
+            width: 375px;
+            box-sizing: border-box;
+        }
+
+        .btn-option{
+            font-size: 12px;
+            padding-left: 0;
+            padding-right: 2px;
             margin: 0;
             margin-top: 2px;
         }
 
         
-            .resume-content .resume-item{
-                width: 370px;
+        .resume-content .resume-item{
+            width: 375px;
                 
-            }
+        }
 
-            .resume-item .resume-item-container{
-                width: 370px;
-            }
+        .resume-item .resume-item-container{
+            width: 375px;
+        }
             
             .educacao .content-bio{
-                padding-top: 2px;
+                margin-top: -10px;
                 align-items: center;
                 justify-content: left;
                 text-align: left;
             }
             
             .content-bio ul{
-                margin: 5px;
-                margin-top: 60px;
+                margin: 2px;
+                margin-top: 30px;
             }
             .content-bio li{
                 font-family: cursive;
@@ -585,7 +678,7 @@
             }
 
             .experiencia .content-experience{
-                padding-top: 5px;
+                padding-top: 50px;
             }
 
             .span-title-experience{
@@ -610,6 +703,7 @@
 
                         
             .resume-item .resume-item-container .skins{
+                padding-top: 50px;               
                 height: 325px;
             } 
 
@@ -637,7 +731,7 @@
                         
             .resume-item .resume-item-container .projectos{
                 height: 325px;
-                padding-top: 15px;
+                padding-top: 35px;
             }
 
             .procjct-title{
@@ -650,9 +744,8 @@
 
                     
         .resume-item .resume-item-container .interesse{
-            /* height: 325px; */
             margin-top: 15px;
-            padding-top: 10px;
+            padding-top: 35px;
         }
 
         .interesse-content .interesse-title{
@@ -720,7 +813,7 @@
             }
 
             .experiencia .content-experience{
-                padding-top: 1px;
+                padding-top: 17px;
             }
 
             .span-title-experience{
@@ -731,11 +824,14 @@
 
             .span-content-experience{
                 margin-top: 1px;
-                font-size: 8px;
+                font-size: 9px;
             }
 
             .btn-experience{
-             font-size: 2px;
+                /* right: 300px;
+             font-size: 9px;
+             width: 70px; */
+             display: none;
             }
 
                                    
@@ -785,7 +881,7 @@
                     
         .resume-item .resume-item-container .interesse{
             margin-top: 5px;
-            padding-top: 5px;
+            padding-top: 35px;
         }
 
         .interesse-content .interesse-title{
@@ -797,8 +893,16 @@
         }   
         
         .interesse-content ::marker{
-            font-size: 14px;
+            font-size: 12px;
+        }
+
+        .interesse-content ul li{
+            margin-top: 0px;
+        }
+
+        .interesse-content ul li p{
+            margin-top: 0px;
         }
 
         
-    }
+    } 

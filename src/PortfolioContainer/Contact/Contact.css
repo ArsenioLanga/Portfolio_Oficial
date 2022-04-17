@@ -157,15 +157,27 @@ form{
     box-shadow: 0 0.1rem 0.6rem #000009;
 }
 
+    @media screen and (max-width: 910px){
+            
+    .contacto-wrapper{
+        width: 80%;
+        height: 27rem;
+    }
+
+
+    }
+
+
+
     @media screen and (max-width: 810px){
 
-    .contacto-left{
-        width: 46%;
-    }
+        .contacto-left{
+            width: 30%;
+        }
 
-    .contacto-right{
-        width: 54%;
-    }
+        .contacto-right{
+            width: 70%;
+        }
 
     }
 
@@ -180,11 +192,11 @@ form{
         }
         
         .contacto-left{
-            width: 40%;
+            width: 15%;
         }
         
         .contacto-right{
-            width: 60%;
+            width: 75%;
         }
         
         
@@ -252,19 +264,20 @@ form{
  @media screen and (max-width: 375px){
     .conctact-container{
         height: auto;
+        width: auto;
     }
     .contacto-wrapper{
-        width: 60%;
+        width: 95%;
         height: 20rem;
         margin-top: 30px;
     }
     
     .contacto-left{
-        width: 20%;
+        width: 0%;
     }
     
     .contacto-right{
-        width: 75%;
+        width: 100%;
     }
 
     h1{
@@ -306,17 +319,17 @@ form{
         height: auto;
     }
     .contacto-wrapper{
-        width: 60%;
+        width: 98%;
         height: 20rem;
         margin-top: 30px;
     }
     
     .contacto-left{
-        width: 10%;
+        width: 0%;
     }
     
     .contacto-right{
-        width: 80%;
+        width: 100%;
     }
 
     h1{
