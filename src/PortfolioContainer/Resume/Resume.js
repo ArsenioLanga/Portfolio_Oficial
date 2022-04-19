@@ -15,6 +15,12 @@ var inters = document.getElementById('inters');
 var z = document.getElementById('btn');
 const  education = () =>{
 
+            // educt.style.top = "0";
+            // exper.style.top = "0";
+            // skin.style.top = "0";
+            // proj.style.top = "0";
+            // inter.style.top = "0"; 
+            // z.style.top = "0"; 
             educt.style.top = "0";
             exper.style.top = "0";
             skin.style.top = "0";

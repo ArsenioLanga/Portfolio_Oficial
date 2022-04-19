@@ -14,6 +14,28 @@ import "./Profile.css";
           }
     }
 
+//     {
+//         jQuery(document).ready(function($){
+//             $(window).scroll(function () {
+//                 if($(this).scrollTop() > 800) {
+//                     $('#topo').fadeIn();
+//                 } else {
+//                 $('#topo').fadeOut();
+//                 }
+//        });
+//     //    scroll body to 0px on click
+    
+//         $('#topo').click(function () {
+//             $('body, htnl').animate({
+//                 scrollTop: 0
+//             }, 800);
+//             return false
+//         });
+//     });
+
+// }
+
+
 export default function Profile(){
     return(
     <div className="profile-containers"> 
@@ -96,6 +118,11 @@ export default function Profile(){
                     </div>             
                 </div>
             </div> 
+        </div>
+        <div className="top" id="topo" >
+                <a id="link-topo">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
         </div>
     </div>
     )
