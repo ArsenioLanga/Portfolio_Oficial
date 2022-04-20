@@ -155,7 +155,7 @@ nav ul li{
     transform: scale(0.5);
 }
 
-.top #link-topo{
+.link-topo{
     position: fixed;
     right: 3rem;
     bottom: 3rem;

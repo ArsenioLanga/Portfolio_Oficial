@@ -1,10 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 
-   
-   
-    
+ 
     const  menuToggle = () =>{
         var MenuItem = document.getElementById('MenuItem');
         if( MenuItem.style.maxHeight === "0px"){
@@ -14,29 +12,17 @@ import "./Profile.css";
           }
     }
 
-//     {
-//         jQuery(document).ready(function($){
-//             $(window).scroll(function () {
-//                 if($(this).scrollTop() > 800) {
-//                     $('#topo').fadeIn();
-//                 } else {
-//                 $('#topo').fadeOut();
-//                 }
-//        });
-//     //    scroll body to 0px on click
-    
-//         $('#topo').click(function () {
-//             $('body, htnl').animate({
-//                 scrollTop: 0
-//             }, 800);
-//             return false
-//         });
-//     });
-
-// }
-
-
 export default function Profile(){
+
+    
+    const [ pageYPosition, setPageYPosition ] = useState(0);
+
+    function getPageYAfterScroll(){
+        setPageYPosition(window.scrollY);
+    }
+
+    window.addEventListener('scroll', getPageYAfterScroll);
+
     return(
     <div className="profile-containers"> 
         <div className="navbar">
@@ -72,14 +58,12 @@ export default function Profile(){
       
                     <div className="profile-details-name">
                         <span className="primary-text">
-                           {" "}
                             Olá, sou <span className="highlighted-text">Arsénio</span>
                        </span>
                     </div>
  
                     <div className="profile-details-role">
                         <span className="primary-text">
-                           {" "}
                             <h1>
                                 <Typical 
                                   loop={Infinity} 
@@ -119,11 +103,11 @@ export default function Profile(){
                 </div>
             </div> 
         </div>
-        <div className="top" id="topo" >
-                <a id="link-topo">
-                    <i class="fas fa-arrow-up"></i>
-                </a>
-        </div>
+         {pageYPosition > 500 &&
+            <a href="#home" className="link-topo">
+            <i class="fas fa-arrow-up"></i>
+            </a>
+        }
     </div>
     )
 }
