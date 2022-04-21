@@ -105,7 +105,7 @@ export default function Profile(){
         </div>
          {pageYPosition > 500 &&
             <a href="#home" className="link-topo">
-            <i class="fas fa-arrow-up"></i>
+                <i class="fa fa-hand-o-up" aria-hidden="true"></i>
             </a>
         }
     </div>

@@ -172,7 +172,10 @@ nav ul li{
     box-shadow: 0 0.1rem 0.6rem #000009;
 }
 
-
+.link-topo i{
+    color: #1F2235;
+    font-size: 1.8rem;
+}
 
 /* Media querys */
 
