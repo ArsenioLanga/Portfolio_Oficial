@@ -1,26 +1,21 @@
 import React from "react";
 import "./Resume.css";
 
-var educt = document.getElementById('educacao');
-var exper = document.getElementById('experiencia');
-var skin = document.getElementById('skins');
-var proj = document.getElementById('projectos');
-var inter = document.getElementById('interesse');
-// ===============================================
-var educts = document.getElementById('educts');
-var expers = document.getElementById('expers');
-var skinn = document.getElementById('skinn');
-var projs = document.getElementById('projs');
-var inters = document.getElementById('inters');
-var z = document.getElementById('btn');
-const  education = () =>{
 
-            // educt.style.top = "0";
-            // exper.style.top = "0";
-            // skin.style.top = "0";
-            // proj.style.top = "0";
-            // inter.style.top = "0"; 
-            // z.style.top = "0"; 
+const  education = () =>{
+        var educt = document.getElementById('educacao');
+        var exper = document.getElementById('experiencia');
+        var skin = document.getElementById('skins');
+        var proj = document.getElementById('projectos');
+        var inter = document.getElementById('interesse');
+        // ===============================================
+        var educts = document.getElementById('educts');
+        var expers = document.getElementById('expers');
+        var skinn = document.getElementById('skinn');
+        var projs = document.getElementById('projs');
+        var inters = document.getElementById('inters');
+        var z = document.getElementById('btn');
+
             educt.style.top = "0";
             exper.style.top = "0";
             skin.style.top = "0";
@@ -36,6 +31,18 @@ const  education = () =>{
             inters.classList.remove('active');
 }
 const  experience = () => {
+            var educt = document.getElementById('educacao');
+            var exper = document.getElementById('experiencia');
+            var skin = document.getElementById('skins');
+            var proj = document.getElementById('projectos');
+            var inter = document.getElementById('interesse');
+            // ===============================================
+            var educts = document.getElementById('educts');
+            var expers = document.getElementById('expers');
+            var skinn = document.getElementById('skinn');
+            var projs = document.getElementById('projs');
+            var inters = document.getElementById('inters');
+            var z = document.getElementById('btn');
 
             educt.style.top = "-340px";
             exper.style.top = "-340px";
@@ -51,6 +58,18 @@ const  experience = () => {
             inters.classList.remove('active');
 }
 const  skins = () =>{
+            var educt = document.getElementById('educacao');
+            var exper = document.getElementById('experiencia');
+            var skin = document.getElementById('skins');
+            var proj = document.getElementById('projectos');
+            var inter = document.getElementById('interesse');
+            // ===============================================
+            var educts = document.getElementById('educts');
+            var expers = document.getElementById('expers');
+            var skinn = document.getElementById('skinn');
+            var projs = document.getElementById('projs');
+            var inters = document.getElementById('inters');
+            var z = document.getElementById('btn');
 
             educt.style.top = "-680px";
             exper.style.top = "-680px";
@@ -69,6 +88,19 @@ const  skins = () =>{
 }
 const  project = () =>{
 
+            var educt = document.getElementById('educacao');
+            var exper = document.getElementById('experiencia');
+            var skin = document.getElementById('skins');
+            var proj = document.getElementById('projectos');
+            var inter = document.getElementById('interesse');
+            // ===============================================
+            var educts = document.getElementById('educts');
+            var expers = document.getElementById('expers');
+            var skinn = document.getElementById('skinn');
+            var projs = document.getElementById('projs');
+            var inters = document.getElementById('inters');
+            var z = document.getElementById('btn');
+
             educt.style.top = "-1020px";
             exper.style.top = "-1020px";
             skin.style.top = "-1020px";
@@ -83,6 +115,20 @@ const  project = () =>{
             inters.classList.remove('active');
 }
 const  interest = () =>{
+
+
+        var educt = document.getElementById('educacao');
+        var exper = document.getElementById('experiencia');
+        var skin = document.getElementById('skins');
+        var proj = document.getElementById('projectos');
+        var inter = document.getElementById('interesse');
+        // ===============================================
+        var educts = document.getElementById('educts');
+        var expers = document.getElementById('expers');
+        var skinn = document.getElementById('skinn');
+        var projs = document.getElementById('projs');
+        var inters = document.getElementById('inters');
+        var z = document.getElementById('btn');
 
             educt.style.top = "-1360px";
             exper.style.top = "-1360px";
@@ -151,10 +197,7 @@ export default function Resume(){
                                          SGBD (PostGree, Oracle, MysQl, Sqlyog).
                                          Boa parte das minha aplicações  estão no meu perfil do <a className="link-github" href="https://github.com/ArsenioLanga">GitHub</a> la hospedadas e outras em alguns servidores na web.</span>
                                     </li>
-                                    {/* <li>
-                                        <span className="span-title">De</span>  <button className="btn-bio">2012-2014</button> <br />
-                                        <span className="span-content">Nivel Medio</span>  
-                                    </li> */}
+                                    
                                 </ul>
                                 </div>
                         </div>
@@ -177,13 +220,13 @@ export default function Resume(){
                                         <div className="skin-item skin3">
                                             <li>
                                                 <span className="skin-title">JavaScript</span><br />
-                                                <span className="skin-content">React Js, Ajax, jQuery,Vue Js</span>
+                                                <span className="skin-content">React Js, AngularJs,Vue Js</span>
                                             </li>
                                         </div>
                                         <div className="skin-item skin4">
                                             <li>
                                                 <span className="skin-title">Java & Java web</span><br />
-                                                <span className="skin-content">Hibernete, Spring MVC, Maven</span>
+                                                <span className="skin-content">Hibernete, Spring MVC & BOOT</span>
                                             </li>
                                         </div>
                                         <div className="skin-item skin5">
