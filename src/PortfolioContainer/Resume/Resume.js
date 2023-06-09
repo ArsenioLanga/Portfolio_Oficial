@@ -172,8 +172,8 @@ export default function Resume(){
                             <div className="content-bio">
                                 <ul>
                                     <li>
-                                        <span className="span-title">Universidade Eduardo Mondlane </span> <button className="btn-bio">2018-2021</button><br />
-                                        <span className="span-content"> Licenciatura em Informática (por defender)</span>
+                                        <span className="span-title">Universidade Eduardo Mondlane </span> <button className="btn-bio">2018-2023</button><br />
+                                        <span className="span-content"> Licenciatura em Informática</span>
                                     </li>
                                     <li>
                                         <span className="span-title">Escola Secundária de Malhazine</span>  <button className="btn-bio">2012-2014</button> <br />
@@ -213,8 +213,8 @@ export default function Resume(){
                                         </div>
                                         <div className="skin-item skin2">
                                             <li>
-                                                <span className="skin-title">Python</span><br />
-                                                <span className="skin-content">Noções  básicas</span>
+                                                <span className="skin-title">RPA</span><br />
+                                                <span className="skin-content">RPA Developer</span>
                                             </li>
                                         </div>
                                         <div className="skin-item skin3">
@@ -225,13 +225,14 @@ export default function Resume(){
                                         </div>
                                         <div className="skin-item skin4">
                                             <li>
-                                                <span className="skin-title">Java & Java web</span><br />
-                                                <span className="skin-content">Hibernete, Spring MVC & BOOT</span>
+                                                <span className="skin-title">Java SE & EE</span><br />
+                                                <span className="skin-content">JSF,JSP,Spring,JPA & Maven</span>
                                             </li>
                                         </div>
                                         <div className="skin-item skin5">
                                             <li >
-                                                <span className="skin-title">Html</span><br />
+                                                <span className="skin-title">PHC</span><br />
+                                                <span className="skin-content">Tecnico Certicado</span>
                                             </li>
                                         </div>
                                         <div className="skin-item skin6">
