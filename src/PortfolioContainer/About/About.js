@@ -23,10 +23,10 @@ export default function About(){
                      Aberto a novos desafios e disposto a ser um trunfo para o progresso de uma organização.</p>
                       <span>Habilidades:</span>
                       <ul>
-                          <li>Front End Developer</li>
-                          <li>Back End Developer</li>
-                          <li>Mobile Developer</li>
-                          <li>Database Management System</li>
+                          <li>RPA Developer</li>
+                          <li>Consultor de ERP</li>
+                          <li>Analista de Sistema</li>
+                          <li>Web Developement</li>
                           <li>Versioning</li>
                       </ul>
                       </div>
