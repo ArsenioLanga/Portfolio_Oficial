@@ -38,7 +38,7 @@ export default function About(){
                                 Fale comigo
                             </button>
                            </a>
-                          <a href="curriculum_vitae.pdf" download="Arsenio curriculum_vitae.pdf">
+                          <a href="Curriculum Vitae - Arsenio Langa.pdf" download="Arsenio Curriculum Vitae - Arsenio Langa.pdf">
                                 <button className="btn highlighted-btn">Download CV</button>   
                             </a>
                           </div>

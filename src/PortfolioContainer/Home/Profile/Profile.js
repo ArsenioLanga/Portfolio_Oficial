@@ -68,13 +68,13 @@ export default function Profile(){
                                 <Typical 
                                   loop={Infinity} 
                                   steps={[
-                                      "DB Manegerment",
+                                      "DB Manegement",
                                       2000,
                                       "Front Dev",
                                       2000,
                                       "Back Dev",
                                       2000,
-                                      "Web Designer",
+                                      "RPA Dev & Analyst",
                                       2000,
                                       "Mobile Dev",
                                       2000,
@@ -82,7 +82,7 @@ export default function Profile(){
                                 />
                             </h1>
                             <span className="profile-role-tagline">
-                                Analista e programador, com habilidades em tecnologias para front and back end.
+                                Analista e programador, com habilidades para RPA.
                             </span>
                         </span>
                     </div>
@@ -92,7 +92,7 @@ export default function Profile(){
                                 Fale comigo
                             </button>
                            </a>
-                       <a href="curriculum_vitae.pdf" download="Arsenio curriculum_vitae.pdf">
+                       <a href="Curriculum Vitae - Arsenio Langa.pdf" download="Arsenio Curriculum Vitae - Arsenio Langa.pdf">
                             <button className="btn highlighted-btn">Download CV</button>   
                         </a>
                     </div>
